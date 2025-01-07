@@ -20,15 +20,15 @@
 }
 
 .gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: #f58b08;
+  background: -webkit-linear-gradient(to right, #0828f5, #f58b08);
+  background: linear-gradient(to right, #0828f5, #f58b08);
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #0828f5;
+  background: linear-gradient(-90deg, #0828f5 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #0828f5 0%, rgba(60, 51, 80, 0) 100%);
 }
 
 .green-pink-gradient {
@@ -41,7 +41,7 @@
 .green-text-gradient,
 .blue-text-gradient,
 .pink-text-gradient {
-  background: linear-gradient(to top, #f12711, #f5af19);
+  background: linear-gradient(to top, #f58b08, #0828f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
