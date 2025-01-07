@@ -7,18 +7,31 @@ import Interests from './components/Interests';
 import About from './components/About';
 import Experience from './components/Experience';
 
-function App() {
+const App = () => {
   return (
-    <div className="min-h-screen">
-      <main>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
         <About />
         <Skills />
         <Experience />
         <Education />
         <Interests />
-      </main>
-    </div>
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
