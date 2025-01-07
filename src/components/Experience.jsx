@@ -51,23 +51,26 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
-const Experience = () => (
-  <>
-    <motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText} text-center`}>
-        What I have done so far
-      </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>Work Experience</h2>
-    </motion.div>
+const Experience = () => {
+  return (
+    <section id="experience" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8">Experience</h2>
+        
+        <div className="max-w-3xl">
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold">Defensity College, Ministry of Defense</h3>
+            <p className="text-gray-600 mb-2">2023 – Present</p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Worked on Automatic Target Recognition in drones</li>
+              <li>Analyzed data from 2000 annual sign-ups, enhancing recruitment strategies for the Dienjaar program</li>
+              <li>Led data migration to optimize CRM tools for operational efficiency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-    <div className="mt-20 flex flex-col">
-      <VerticalTimeline>
-        {experiences.map((experience, index) => (
-          <ExperienceCard key={`experience-${index}`} experience={experience} />
-        ))}
-      </VerticalTimeline>
-    </div>
-  </>
-);
-
-export default SectionWrapper(Experience, "work");
+export default Experience;
